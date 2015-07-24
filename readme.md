@@ -11,13 +11,15 @@ Follow the instructions to install the [Publick Apache Sling + Sightly blog engi
   1. Install [NodeJS and NPM](https://nodejs.org/)
   2. Install [Grunt CLI](http://gruntjs.com/getting-started): `npm install -g grunt-cli`
   3. Install Grunt plugins: `npm install`
-  4. Run Grunt: `grunt build`
+  4. Optional: Run Grunt: `grunt build`
 
 ## Build
 
 Build and deploy to a running Sling instance with default values of port *8080*, user *admin* and password *admin*:
 
     mvn clean install -PautoInstallBundle
+
+Running this Maven command will trigger the Grunt tasks which compile your SASS as well as concatenate and minify your CSS and JavaScript.
 
 ## Login
 
