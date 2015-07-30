@@ -47,6 +47,8 @@
                         <Private-Package></Private-Package>
                         <Sling-Initial-Content>
                             jcr_root/content;overwrite:=true;uninstall:=true;path:=/content,
+                            jcr_root/apps/publick/pages;overwrite:=true;uninstall:=true;path:=/apps/publick/pages,
+                            jcr_root/apps/publick/components;overwrite:=true;uninstall:=true;path:=/apps/publick/components,
                             jcr_root/etc/clientlibs/nateyolles;overwrite:=true;uninstall:=true;path:=/etc/clientlibs/nateyolles
                         </Sling-Initial-Content>
                     </instructions>

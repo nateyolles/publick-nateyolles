@@ -1,0 +1,19 @@
+<div class="blog-item-sec" data-sly-use.blog="com.nateyolles.sling.publick.components.foundation.BlogView">
+    <img src="${blog.image}" class="img-responsive" alt="${blog.description}">
+    <div class="blog-item-head">
+        <h3>${blog.title}</h3>
+    </div><!--blog post item heading end-->
+    <div class="blog-item-post-info">
+        <span>Nate Yolles | ${blog.displayDate} |  </span>
+    </div><!--blog post item info end-->
+    <div class="blog-item-post-desc">
+        ${blog.content @ context='html'}
+    </div>
+    <div class="blog-more-desc">
+        <div class="row">
+            <div data-sly-resource="${@ resourceType='publick/components/socialMediaShare'}" data-sly-unwrap></div>
+        </div>
+    </div>
+
+    <div data-sly-resource="${@ resourceType='publick/components/comments'}" data-sly-unwrap></div>
+</div>

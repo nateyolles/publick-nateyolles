@@ -1,0 +1,26 @@
+<body data-spy="scroll" data-target="#navigation" data-offset="75">
+    <div data-sly-resource="${@ resourceType='publick/components/navigation'}" data-sly-unwrap></div>
+
+    <div data-sly-resource="${@ resourceType='publick/components/blogTitle'}" data-sly-unwrap></div>
+
+    <section id="blog-post" class="padding-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div data-sly-resource="${@ resourceType='publick/components/blogView'}" data-sly-unwrap></div>
+                </div>
+
+                <div class="col-md-3">
+                    <!--/* <div data-sly-resource="${@ resourceType='publick/components/search'}" data-sly-unwrap></div> */-->
+                    <!--/* <div data-sly-resource="${@ resourceType='publick/components/similarPosts'}" data-sly-unwrap></div> */-->
+                    <!--/* <div data-sly-resource="${@ resourceType='publick/components/categories'}" data-sly-unwrap></div> */-->
+                    <div data-sly-resource="${@ resourceType='publick/components/socialMediaFollow'}" data-sly-unwrap></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div data-sly-resource="${@ resourceType='publick/components/footer'}" data-sly-unwrap></div>
+
+    <script data-sly-include="scripts.html" data-sly-unwrap></script>
+</body>

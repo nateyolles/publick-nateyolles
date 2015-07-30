@@ -1,0 +1,28 @@
+<head data-sly-use.blog="com.nateyolles.sling.publick.components.foundation.BlogView">
+  <title data-sly-text="${blog.title} - Nate Yolles - Adobe Experience Manager"></title>
+  <link data-sly-include="links.html" data-sly-unwrap></link>
+  <meta name="description" content="${blog.description}">
+  <meta name="keywords" content="Adobe Experience Manager,AEM,CQ,${blog.keywords}">
+  <meta name="author" content="Nate Yolles">
+  <meta property="og:title" content="${blog.title} - Nate Yolles - Adobe Experience Manager">
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="${blog.publishedDate}">
+  <meta property="article:modified_time" content="${blog.publishedDate}">
+  <meta property="article:author" content="Nate Yolles">
+  <meta property="article:section" content="Technology">
+  <meta property="article:tag" content="Adobe Experience Manager">
+  <meta property="article:tag" content="AEM">
+  <meta property="article:tag" content="CQ5">
+  <sly data-sly-list="${blog.keywords}">
+    <meta property="article:tag" content="${item}">
+  </sly>
+  <meta property="og:url" content="${blog.displayPath}">
+  <meta property="og:image" content="${blog.displayImage}">
+  <meta property="og:description" content="${blog.description}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@nateyolles">
+  <meta name="twitter:creator" content="@nateyolles">
+  <meta name="twitter:title" content="${blog.title} - Nate Yolles - Adobe Experience Manager">
+  <meta name="twitter:description" content="${blog.description}">
+  <meta name="twitter:image" content="${blog.displayImage}">
+</head>

@@ -438,6 +438,9 @@ social icons css here
     @include border-radius (2px);
 }
 
+.social-colored li a i.icon-fb{
+    background-color: #077aaa;
+}
 .social-colored li a i.icon-github {
   background-color: #333;
 }
@@ -450,15 +453,9 @@ social icons css here
 .social-colored li a i.icon-pin {
     background-color: #843534;
 }
-/**v1.1**/
 .social-colored li a i.icon-in {
     background-color: #007bb6;
 }
-
-
-
-
-
 
 /****************************
 About section
