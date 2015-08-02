@@ -1,9 +1,9 @@
 <div class="blog-item-sec" data-sly-use.blog="com.nateyolles.sling.publick.components.foundation.BlogView">
-    <a href="${resource.path}.html">
+    <a href="${blog.displayPath @ context='uri'}">
         <img src="${blog.image}" class="img-responsive" alt="${blog.description}">
     </a>
     <div class="blog-item-head">
-        <h3><a href="${resource.path}.html">${blog.title}</a></h3>
+        <h3><a href="${blog.displayPath @ context='uri'}">${blog.title}</a></h3>
     </div>
     <div class="blog-item-post-info">
         <span>Nate Yolles | ${blog.displayDate} |</span>
@@ -15,7 +15,7 @@
         <div class="row">
             <div data-sly-resource="${@ resourceType='publick/components/socialMediaShare'}" data-sly-unwrap></div>
             <div class="col-sm-6 text-right col-xs-12">
-                <a href="${resource.path}.html" class="btn btn-theme-color">Read more <i class="fa fa-angle-right"></i></a>
+                <a href="${blog.displayPath @ context='uri'}" class="btn btn-theme-color">Read more <i class="fa fa-angle-right"></i></a>
             </div>
         </div>
     </div>
