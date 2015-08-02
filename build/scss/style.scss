@@ -438,10 +438,10 @@ social icons css here
     @include border-radius (2px);
 }
 
-.social-colored li a i.icon-fb{
+.social-colored li a i.icon-f{
     background-color: #077aaa;
 }
-.social-colored li a i.icon-github {
+.social-colored li a i.icon-git {
   background-color: #333;
 }
 .social-colored li a i.icon-twit {
@@ -1662,4 +1662,26 @@ label span {
 
 #result {
     display: none;
+}
+
+
+/* Copied from font-awesome, name changed to prevent adblock for hiding them */
+.logo-l:before {
+  content: "\f0e1";
+}
+
+.logo-g:before {
+  content: "\f09b";
+}
+
+.logo-f:before {
+  content: "\f09a";
+}
+
+.logo-t:before {
+  content: "\f099";
+}
+
+.logo-p:before {
+  content: "\f0d5";
 }
