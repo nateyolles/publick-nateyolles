@@ -49,7 +49,8 @@ module.exports = function(grunt) {
           'build/js/jquery.mb.YTPlayer.min.js',
           'build/js/waypoints.min.js',
           'build/js/jqBootstrapValidation.js',
-          'build/js/custom.js'
+          'build/js/custom.js',
+          'build/js/twitter.min.js'
         ],
         dest: 'build/js/<%=pkg.name%>.min.js'
       },
