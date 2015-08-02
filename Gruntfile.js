@@ -51,7 +51,8 @@ module.exports = function(grunt) {
           'build/js/jqBootstrapValidation.js',
           'build/js/custom.js',
           'build/js/twitter.min.js',
-          'build/js/facebook.js'
+          'build/js/facebook.js',
+          'build/js/googleplus.js'
         ],
         dest: 'build/js/<%=pkg.name%>.min.js'
       },
