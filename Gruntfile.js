@@ -52,7 +52,8 @@ module.exports = function(grunt) {
           'build/js/custom.js',
           'build/js/twitter.min.js',
           'build/js/facebook.js',
-          'build/js/googleplus.js'
+          'build/js/googleplus.js',
+          'build/js/linkedin.js'
         ],
         dest: 'build/js/<%=pkg.name%>.min.js'
       },
