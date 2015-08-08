@@ -2,6 +2,8 @@
 
 This project is my personal site and blog using the [Publick Apache Sling + Sightly blog engine](https://github.com/nateyolles/publick-sling-blog).
 
+View the project at [nateyolles.com](http://www.nateyolles.com). The project takes advantage of Amazon's AWS free tiers. Apache Sling and Publick is hosted on an EC2 instance with the AMI Linux distrobution. Email is sent through Amazon's Simple Email Service (SES). Traffic is handled with an Apache Web Server and cached with Adobe's Dispatcher module.
+
 ## Install Publick blog engine
 
 Follow the instructions to install the [Publick Apache Sling + Sightly blog engine](https://github.com/nateyolles/publick-sling-blog).
