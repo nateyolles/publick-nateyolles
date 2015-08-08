@@ -94,7 +94,7 @@ $(function(){
       event.preventDefault();
 
       $.ajax({
-        url: '/bin/sendmail',
+        url: '/bin/publick/sendmail',
         type: 'POST',
         data: {
           name: $('#name').val(),
