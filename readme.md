@@ -25,9 +25,9 @@ Running this Maven command will trigger the Grunt tasks which compile your SASS 
 
 ## Login
 
-Navigate to [http://localhost:8080/content/index.html](http://localhost:8080/content/index.html) to view the homepage.
+Navigate to [http://localhost:8080/index.html](http://localhost:8080/index.html) to view the homepage.
 
-Navigate to [http://localhost:8080/content/admin/login.html](http://localhost:8080/content/admin/login.html) to login. The default credentials are *admin*/*admin*.
+Navigate to [http://localhost:8080/admin/login.html](http://localhost:8080/admin/login.html) to login. The default credentials are *admin*/*admin*.
 
 ## Apache Web Server setup
 
