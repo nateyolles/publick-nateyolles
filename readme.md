@@ -25,7 +25,24 @@ Running this Maven command will trigger the Grunt tasks which compile your SASS 
 
 Navigate to [http://localhost:8080/content/index.html](http://localhost:8080/content/index.html) to view the homepage.
 
-Navigate to [http://localhost:8080/content/admin/login.html](http://localhost:8080/content/admin/login.html) to login. The default credentials are *admin*/*admin*. 
+Navigate to [http://localhost:8080/content/admin/login.html](http://localhost:8080/content/admin/login.html) to login. The default credentials are *admin*/*admin*.
+
+## Apache Web Server setup
+
+  1. Serve nateyolles.com on port 80 so that the end users don't have to type in a port number.
+  2. Redirect any path removing `/content`.
+
+```
+<VirtualHost *:80>
+     ProxyPreserveHost On
+     ProxyPass / http://localhost:8080/
+     ProxyPassReverse / http://localhost:8080/
+     ServerName www.nateyolles.com
+
+     RewriteEngine On
+     RewriteRule ^/content/(.*)$ /$1 [R=301,NC,L,QSA]
+</VirtualHost>
+```
 
 ## Further information
 
