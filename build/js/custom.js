@@ -81,7 +81,19 @@ $(function(){
   var $result = $('#result'),
     $alert = $result.find('.alert'),
     $status = $result.find('.status'),
-    $message = $result.find('.message');
+    $message = $result.find('.message'),
+    $close = $result.find('.close');
+
+  $close.click(function(e){
+    e.preventDefault();
+    $alert.hide();
+  });
+
+  function resetRecaptcha() {
+    if (typeof grecaptcha !== 'undefined') {
+      grecaptcha.reset();
+    }
+  }
 
   $('.email-input').jqBootstrapValidation({
     preventSubmit: true,
@@ -104,8 +116,9 @@ $(function(){
         },
         cache: false,
         success: function(data) {
-          $status.html(data.status);
-          $message.html(data.message);
+          resetRecaptcha();
+          $status.html('Success');
+          $message.html(data.message || 'Email was successfully sent.');
           $alert
             .removeClass('alert-danger')
             .addClass('alert-success')
@@ -115,8 +128,9 @@ $(function(){
           $form.trigger('reset');
         },
         error: function(data) {
-          $status.html(data.status);
-          $message.html(data.message);
+          resetRecaptcha();
+          $status.html('Error');
+          $message.html(data.message || 'Email could not be sent.');
           $alert
             .removeClass('alert-success')
             .addClass('alert-danger')
