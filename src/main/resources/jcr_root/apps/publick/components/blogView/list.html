@@ -1,4 +1,5 @@
-<div class="blog-item-sec" data-sly-use.blog="com.nateyolles.sling.publick.components.foundation.BlogView">
+<div class="blog-item-sec" data-sly-use.blog="com.nateyolles.sling.publick.components.foundation.BlogView"
+    data-sly-use.comments="com.nateyolles.sling.publick.components.foundation.CommentsView">
     <a href="${blog.displayPath @ context='uri'}">
         <img src="${blog.image}" class="img-responsive" alt="${blog.description}">
     </a>
@@ -6,7 +7,7 @@
         <h3><a href="${blog.displayPath @ context='uri'}">${blog.title}</a></h3>
     </div>
     <div class="blog-item-post-info">
-        <span>Nate Yolles | ${blog.displayDate} |</span>
+        <span>Nate Yolles | ${blog.displayDate} | <a href="${blog.displayPath @ context='uri'}#commentWrapper" class="blog-view-comments">${comments.count} comments</a> |</span>
     </div>
     <div class="blog-item-post-desc">
         ${blog.content @ context='html'}

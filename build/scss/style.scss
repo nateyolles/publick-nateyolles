@@ -1667,21 +1667,33 @@ label span {
 
 /* Copied from font-awesome, name changed to prevent adblock for hiding them */
 .logo-l:before {
-  content: "\f0e1";
+    content: "\f0e1";
 }
 
 .logo-g:before {
-  content: "\f09b";
+    content: "\f09b";
 }
 
 .logo-f:before {
-  content: "\f09a";
+    content: "\f09a";
 }
 
 .logo-t:before {
-  content: "\f099";
+    content: "\f099";
 }
 
 .logo-p:before {
-  content: "\f0d5";
+    content: "\f0d5";
+}
+
+
+/* comments */
+.reply {
+    padding-left: 17px;
+    margin-left: 40px;
+    border-left: solid 1px #eee;
+}
+
+#addCommentContainer {
+  display: none;
 }

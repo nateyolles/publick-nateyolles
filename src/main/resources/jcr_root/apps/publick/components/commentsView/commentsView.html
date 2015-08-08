@@ -1,0 +1,43 @@
+<div data-sly-use.comments="com.nateyolles.sling.publick.components.foundation.CommentsView" class="comment-wrapper" id="commentWrapper">
+    <h4>${comments.count} Comments</h4>
+    <div class="comment-box" id="commentListContainer" data-sly-list.comment="${comments.comments}">
+        <div data-sly-attribute.data-comment-path="${comment.path}" class="comment-item-container">
+            <div class="comment-list">
+                <h5>${comment.author} | ${comment.date} | <a href="#" class="comment-reply">Reply</a></h5>
+                <p data-sly-text="${comment.comment}"></p>
+            </div>
+            <div data-sly-list.reply="${comment.replies}" data-sly-unwrap>
+                <div class="comment-list reply">
+                    <h5>${reply.author} | ${reply.date} | <a href="#" class="comment-reply">Reply</a></h5>
+                    <p data-sly-text="${reply.comment}"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="addCommentContainer" class="comment-form">
+        <h4><a href="#">Leave a Comment</a></h4>
+    </div>
+    <div id="newCommentContainer">
+        <div class="comment-form" id="commentForm">
+            <h4 id="formHeader" data-comment-text="Leave a Comment" data-reply-text="Leave a Reply">Leave a Comment</h4>
+            <form method="POST" action="/bin/publick/addcomment" class="wow animated fadeInUp">
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" placeholder="Name" name="author" id="author">
+                    </div>
+                    <div class="col-md-12">
+                        <textarea class="form-control" placeholder="Your Comment" name="comment" rows="7"></textarea>
+                    </div>
+                    <div class="col-md-12">
+                        <div data-sly-resource="${@ resourceType='publick/components/foundation/recaptcha'}" data-sly-unwrap></div>
+                    </div>
+                    <div class="col-md-12 text-right">
+                        <input type="hidden" name="blogPath" data-sly-attribute.value="${resource.path}">
+                        <input type="hidden" name="commentPath" id="commentPath">
+                        <button type="submit" class="btn btn-lg btn-theme-color" id="formButton" data-comment-text="Post Comment" data-reply-text="Post Reply">Post Comment</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
