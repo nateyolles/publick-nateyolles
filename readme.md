@@ -36,13 +36,15 @@ Navigate to [http://localhost:8080/admin/login.html](http://localhost:8080/admin
 
 ```
 <VirtualHost *:80>
-     ProxyPreserveHost On
-     ProxyPass / http://localhost:8080/
-     ProxyPassReverse / http://localhost:8080/
-     ServerName www.nateyolles.com
+    ProxyPreserveHost On
+    ProxyPass / http://localhost:8080/
+    ProxyPassReverse / http://localhost:8080/
+    ServerName www.nateyolles.com
 
-     RewriteEngine On
-     RewriteRule ^/content/(.*)$ /$1 [R=301,NC,L,QSA]
+    <IfModule mod_rewrite.c>
+        RewriteEngine On
+        RewriteRule ^/content/(.*)$ /$1 [R=301,NC,L,QSA]
+    </IfModule>
 </VirtualHost>
 ```
 
