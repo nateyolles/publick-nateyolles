@@ -307,12 +307,18 @@ page-head section
     background-attachment: fixed;
 }
 
-#page-head-bg h1 {
+#page-head-bg h1,
+#page-head-bg h2 {
     margin: 0;
     text-transform: uppercase;
     color: #fff;
     font-weight: 400;
     font-size: 31px;
+}
+
+#page-head-bg h2 {
+    font-size: 24px;
+    margin-top: 14px;
 }
 
 

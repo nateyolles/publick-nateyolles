@@ -1,5 +1,6 @@
-<head data-sly-use.blog="com.nateyolles.sling.publick.components.foundation.BlogView">
-  <title data-sly-text="${blog.title} - Nate Yolles - Adobe Experience Manager"></title>
+<head data-sly-use.blog="com.nateyolles.sling.publick.components.foundation.BlogView"
+      data-sly-use.system="com.nateyolles.sling.publick.components.admin.SystemConfig">
+  <title data-sly-text="${system.title}"></title>
   <link data-sly-include="links.html" data-sly-unwrap></link>
   <meta name="description" content="${blog.description}">
   <meta name="keywords" content="Adobe Experience Manager,AEM,CQ,${blog.keywords}">
