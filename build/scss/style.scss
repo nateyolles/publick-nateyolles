@@ -160,13 +160,17 @@ h2.slide-btm-text {
     overflow: hidden;
 }
 
-.main-flex-slider h1 {
+.main-flex-slider h2 {
     font-size: 4em;
     color:#fff;
     text-transform: uppercase;
     font-weight: 400;
     margin-bottom: 60px;
     margin:0;
+}
+
+.slides li:nth-child(n+2) {
+    display: none;
 }
 
 /*home arrow down*/

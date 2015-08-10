@@ -2,14 +2,14 @@ $(function(){
   $('.main-flex-slider').flexslider({
     slideshowSpeed: 5000,
     directionNav: false,
-    animation: "fade",
+    animation: 'fade',
     controlNav:false
   });
 
   $('.portfolio-slide').flexslider({
     slideshowSpeed: 5000,
     directionNav: false,
-    animation: "fade",
+    animation: 'fade',
     controlNav:true
   });
 
