@@ -55,7 +55,9 @@ $(function(){
     return false;
   });
 
-  $('.player').mb_YTPlayer();
+  if (!$.browser.mobile) {
+    $('.player').mb_YTPlayer();
+  }
 
   $('#modal').on('show.bs.modal', function (event) {
     var $target = $(event.relatedTarget),

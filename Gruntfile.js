@@ -43,6 +43,7 @@ module.exports = function(grunt) {
           'build/js/jquery.easing.1.3.min.js',
           'build/js/bootstrap.min.js',
           'build/js/jquery.flexslider-min.js',
+          'build/js/detectmobilebrowser.min.js',
           'build/js/wow.min.js',
           'build/js/jquery.sticky.js',
           'build/js/jquery.stellar.min.js',
