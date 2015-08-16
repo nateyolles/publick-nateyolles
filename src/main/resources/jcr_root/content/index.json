@@ -1,0 +1,4 @@
+{
+    "jcr:primaryType": "publick:page",
+    "sling:resourceType" : "publick/components/homePage",
+}

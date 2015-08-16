@@ -11,7 +11,7 @@
     <body data-spy="scroll" data-target="#navigation" data-offset="80">
         <section id="home" class="home-video full-screen-dem" data-stellar-background-ratio="0.5">
             <div class="parallax-overlay video-overlay"></div> 
-            <a id="video" class="player" data-stellar-background-ratio="0.5" data-property="{videoURL:'http://youtu.be/4PZsh3TB-Ug',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:44, opacity:1, quality:'small'}"></a>
+            <a id="video" class="player" data-stellar-background-ratio="0.5" data-property="{videoURL:'http://youtu.be/4PZsh3TB-Ug',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:44, opacity:1, quality:'large'}"></a>
             <div class="home-content text-center">
                 <div class="container">
                     <h1 class=" slide-logo">Nate Yolles</h1>
@@ -48,7 +48,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="/index.html">Nate Yolles</a>
+                        <a class="navbar-brand" href="/">Nate Yolles</a>
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right scrollto">
@@ -58,7 +58,7 @@
                             <li><a href="#work">Work</a></li>
                             <li><a href="#projects">projects</a></li>
                             <li><a href="#contact">Contact</a></li>
-                            <li><a href="/blog.html">Blog</a></li>
+                            <li><a href="/blog">Blog</a></li>
                         </ul>
                     </div>
                 </div>
@@ -224,7 +224,7 @@
                             <div class="row">
                                 <div class="col-sm-10 col-sm-offset-1">
                                     <h4 class="wow animated fadeInDown">Knowledge, experiences, insights, learnings and experiments with the Adobe Experience Manager stack documented in a blog engine written with Apache Sling</h4>
-                                    <a class="btn btn-theme-color btn-lg" href="/blog.html">Read Blog</a>
+                                    <a class="btn btn-theme-color btn-lg" href="/blog">Read Blog</a>
                                 </div>
                             </div>
                         </div>
@@ -433,7 +433,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="g-recaptcha" data-sitekey="6LfaUgkTAAAAAN2NaHXdbSwE1_Shh48fFGjUnzU1"></div>
+                                        <div data-sly-resource="${@ resourceType='publick/components/foundation/recaptcha'}" data-sly-unwrap></div>
                                     </div>
                                 </div>
                                 <br>
