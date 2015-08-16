@@ -1,6 +1,6 @@
 <section data-sly-use.blog="com.nateyolles.sling.publick.components.foundation.BlogView"
   data-sly-use.system="com.nateyolles.sling.publick.components.admin.SystemConfig"
-  id="page-head-bg" style="background-image: url('${blog.image || '/etc/clientlibs/nateyolles/img/background.jpg' @ context='uri'}');" class="parallax" data-stellar-background-ratio=".5">
+  id="page-head-bg" style="background-image: url('${blog.imageRelativePath || '/etc/clientlibs/nateyolles/img/background.jpg' @ context='uri'}');" class="parallax" data-stellar-background-ratio=".5">
     <div class="container">
         <h1>${system.blogName}</h1>
     </div>

@@ -17,15 +17,15 @@
   <sly data-sly-list="${blog.keywords}">
     <meta property="article:tag" content="${item}">
   </sly>
-  <meta property="og:url" content="${blog.displayPath}">
-  <meta property="og:image" content="${blog.displayImage}">
+  <meta property="og:url" content="${blog.postAbsolutePath}">
+  <meta property="og:image" content="${blog.imageAbsolutePath}">
   <meta property="og:description" content="${blog.description}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@nateyolles">
   <meta name="twitter:creator" content="@nateyolles">
   <meta name="twitter:title" content="${blog.title} - Nate Yolles - Adobe Experience Manager">
   <meta name="twitter:description" content="${blog.description}">
-  <meta name="twitter:image" content="${blog.displayImage}">
+  <meta name="twitter:image" content="${blog.imageAbsolutePath}">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
