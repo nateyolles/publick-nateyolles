@@ -1,9 +1,9 @@
 <div class="col-sm-6 col-xs-12" data-sly-use.blog="com.nateyolles.sling.publick.components.foundation.BlogView">
     <ul class="list-inline social-colored">
         <li class="empty-text">Share:</li>
-        <li><a href="#"><i class="fa logo-l icon-in" data-toggle="tooltip" title="" data-original-title="LinkedIn" data-placement="top" data-url="${blog.postAbsolutePath}" data-title="${blog.title}" data-summary="${blog.description}" data-source="nateyolles.com"></i></a></li>
-        <li><a href="https://twitter.com/intent/tweet?text=${blog.title @ context='attribute'}&via=nateyolles&url=${blog.postAbsolutePath}"><i class="fa logo-t icon-twit" data-toggle="tooltip" title="" data-original-title="Twitter" data-placement="top"></i></a></li>
+        <li><a href="#"><i class="fa logo-l icon-in" data-toggle="tooltip" title="" data-original-title="LinkedIn" data-placement="top" data-url="${blog.absoluteExternalPath}" data-title="${blog.title}" data-summary="${blog.description}" data-source="nateyolles.com"></i></a></li>
+        <li><a href="https://twitter.com/intent/tweet?text=${blog.title @ context='attribute'}&via=nateyolles&url=${blog.absoluteExternalPath}"><i class="fa logo-t icon-twit" data-toggle="tooltip" title="" data-original-title="Twitter" data-placement="top"></i></a></li>
         <li><a href="#"><i class="fa logo-f icon-f" data-toggle="tooltip" title="" data-original-title="Facebook" data-placement="top"></i></a></li>
-        <li><a href="#"><i class="fa logo-p icon-plus" data-url="${blog.postAbsolutePath}" data-toggle="tooltip" title="" data-original-title="Google plus" data-placement="top"></i></a></li>
+        <li><a href="#"><i class="fa logo-p icon-plus" data-url="${blog.absoluteExternalPath}" data-toggle="tooltip" title="" data-original-title="Google plus" data-placement="top"></i></a></li>
     </ul>
 </div>
