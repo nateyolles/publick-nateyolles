@@ -79,7 +79,7 @@ Navigate to [http://localhost:8080/admin/login.html](http://localhost:8080/admin
     RewriteCond     %{REQUEST_URI} !^/bin [NC]
     RewriteCond     %{REQUEST_URI} !^/etc [NC]
     RewriteCond     %{REQUEST_URI} !^/assets [NC]
-    RewriteCond     %{REQUEST_URI} !.*\..*/$ [NC]
+    RewriteCond     %{REQUEST_URI} !.*\..*/?$ [NC]
     RewriteCond     %{REQUEST_URI} !.*/$ [NC]
     RewriteRule     (.*)$ $1.html [PT,L,NC,QSA]
 
