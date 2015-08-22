@@ -52,6 +52,10 @@ Navigate to [http://localhost:8080/admin/login.html](http://localhost:8080/admin
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
+    # Always use www
+    RewriteCond %{HTTP_HOST} !^www\.nateyolles\.com [NC]
+    RewriteRule ^(.*)$ http://www.nateyolles.com$1 [R=301,NC,QSA]
+
     # Step 1: Redirect all paths that end in .html or slash.
     # Redirect to remove index.html and /content. Hopefully
     # you've provided the correct links so that you don't
