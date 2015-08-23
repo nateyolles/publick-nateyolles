@@ -51,7 +51,7 @@ module.exports = function(grunt) {
           'build/js/waypoints.min.js',
           'build/js/jqBootstrapValidation.js',
           'build/js/custom.js',
-          'build/js/twitter.min.js',
+          'build/js/twitter.js',
           'build/js/facebook.js',
           'build/js/googleplus.js',
           'build/js/linkedin.js'
