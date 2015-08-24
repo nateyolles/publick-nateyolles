@@ -68,6 +68,11 @@ Navigate to [http://localhost:8080/admin/login.html](http://localhost:8080/admin
     RewriteRule     ^/content/(.*)$ /$1 [R=301,L,NC,QSA]
 
     # Remove .html
+    # Condition needed for a bug in Sling 7. Updating a user group
+    # doesn't work when posting to JSON. While fixed in Sling 8, the
+    # admin JavaScript UserService#PATH_UPDATE_GROUP would need to be
+    # updated as well if you were going to use it. See Publick's readme.md.
+    RewriteCond     %{REQUEST_URI} !^/system/userManager/group/.+\.update.html [NC]
     RewriteRule     (.*).html$ $1 [R=301,L,NC,QSA]
 
     # remove /index
