@@ -4,6 +4,8 @@ This project is my personal site and blog using the [Publick Apache Sling + Sigh
 
 View the project at [nateyolles.com](http://www.nateyolles.com). The project takes advantage of Amazon's AWS free tiers. Apache Sling and Publick is hosted on an EC2 instance with the AMI Linux distrobution. Email is sent through Amazon's Simple Email Service (SES). Traffic is handled with an Apache Web Server and cached with Adobe's Dispatcher module.
 
+Log into the dashboard at [nateyolles.com/admin](http://www.nateyolles.com/admin) using username *demo* and password *demo*.
+
 ## Install Publick blog engine
 
 Follow the instructions to install the [Publick Apache Sling + Sightly blog engine](https://github.com/nateyolles/publick-sling-blog).
@@ -28,6 +30,10 @@ Running this Maven command will trigger the Grunt tasks which compile your SASS 
 Navigate to [http://localhost:8080/index.html](http://localhost:8080/index.html) to view the homepage.
 
 Navigate to [http://localhost:8080/admin/login.html](http://localhost:8080/admin/login.html) to login. The default credentials are *admin*/*admin*.
+
+## Setup
+
+Follow instructions per the [Publick instructions](https://github.com/nateyolles/publick-sling-blog#configuration).
 
 ## Apache Web Server setup
 
