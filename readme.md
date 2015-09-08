@@ -35,6 +35,14 @@ Navigate to [http://localhost:8080/admin/login.html](http://localhost:8080/admin
 
 Follow instructions per the [Publick instructions](https://github.com/nateyolles/publick-sling-blog#configuration).
 
+## TODO
+
+Figure out how to upload a json file as binary data rather than having Sling parse it and create nodes out of it. For the time being, the manifest.json file is saved as manifest.txt for upload. Then run the following cURL command to rename it:
+
+```
+curl -u admin:admin http://localhost:8080/content/manifest.txt -F":operation=move" -F":dest=/content/manifest.json"
+```
+
 ## Apache Web Server setup
 
   1. Serve nateyolles.com on port 80 and proxy to Apache Sling on port 8080.
