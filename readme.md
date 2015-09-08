@@ -59,8 +59,8 @@ Follow instructions per the [Publick instructions](https://github.com/nateyolles
     RewriteEngine On
 
     # Always use www
-    RewriteCond %{HTTP_HOST} !^www\.nateyolles\.com [NC]
-    RewriteRule ^(.*)$ http://www.nateyolles.com$1 [R=301,NC,QSA]
+    RewriteCond %{HTTP_HOST} !^www\.
+    RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
     # Step 1: Redirect all paths that end in .html or slash.
     # Redirect to remove index.html and /content. Hopefully
