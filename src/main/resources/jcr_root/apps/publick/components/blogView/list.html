@@ -7,7 +7,7 @@
         <h3><a href="${blog.relativeExternalPath @ context='uri'}">${blog.title}</a></h3>
     </div>
     <div class="blog-item-post-info">
-        <span>Nate Yolles | ${blog.displayDate} | <a href="${blog.relativeExternalPath @ context='uri'}#comments" class="blog-view-comments">${comments.count} comments</a> |</span>
+        <span>Nate Yolles | ${blog.displayDate} | <a href="${blog.relativeExternalPath @ context='uri'}#comments" class="blog-view-comments">${comments.count} <sly data-sly-text="${comments.count == 1 ? 'comment' : 'comments'}"></sly></a> |</span>
     </div>
     <div class="blog-item-post-desc">
         ${blog.content @ context='html'}

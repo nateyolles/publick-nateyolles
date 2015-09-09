@@ -340,7 +340,8 @@ blog section css here
 }
 
 .blog-item-head{
-    padding: 15px 0px;
+    padding: 0 0 15px 0;
+    /* padding: 15px 0px; when image is used */
     margin: 10px 0;
 }
 .blog-item-head h3 {
@@ -1603,5 +1604,14 @@ label span {
 }
 
 #addCommentContainer {
-  display: none;
+    display: none;
+}
+
+.post-heading {
+    background-color: black;
+    color: #fff;
+    display: inline;
+    padding: 0.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
