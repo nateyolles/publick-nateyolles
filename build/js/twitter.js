@@ -1,5 +1,5 @@
 $(function(){
-  $('.logo-t').each(function(){
+  $('.logo-t.share').each(function(){
     var $this = $(this);
 
     $this.click(function(e){
