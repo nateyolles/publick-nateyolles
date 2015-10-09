@@ -19,23 +19,6 @@ module.exports = function(grunt) {
     concat: {
       options: {
         stripBanners: false,
-        banner: '/*!\n' +
-          ' * <%= pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %>\n'+
-          ' * ADOBE CONFIDENTIAL\n'+
-          ' * ==================\n'+
-          ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n'+
-          ' * All Rights Reserved.\n'+
-          ' *\n'+
-          ' * NOTICE: All information contained herein is, and remains\n'+
-          ' * the property of <%= pkg.author %> and its suppliers,\n'+
-          ' * if any.  The intellectual and technical concepts contained\n'+
-          ' * herein are proprietary to Adobe Systems Incorporated and its\n'+
-          ' * suppliers and are protected by trade secret or copyright law.\n'+
-          ' * Dissemination of this information or reproduction of this material\n'+
-          ' * is strictly forbidden unless prior written permission is obtained\n'+
-          ' * from <%= pkg.author %>.\n'+
-          ' */\n'+
-          '\n'
       },
       'js': {
         src: [
@@ -54,7 +37,8 @@ module.exports = function(grunt) {
           'build/js/twitter.js',
           'build/js/facebook.js',
           'build/js/googleplus.js',
-          'build/js/linkedin.js'
+          'build/js/linkedin.js',
+          'build/js/gist-embed.min.js',
         ],
         dest: 'build/js/<%=pkg.name%>.min.js'
       },
