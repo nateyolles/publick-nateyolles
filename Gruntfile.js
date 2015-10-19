@@ -39,6 +39,7 @@ module.exports = function(grunt) {
           'build/js/googleplus.js',
           'build/js/linkedin.js',
           'build/js/gist-embed.min.js',
+          'build/js/prism.min.js'
         ],
         dest: 'build/js/<%=pkg.name%>.min.js'
       },
@@ -49,7 +50,8 @@ module.exports = function(grunt) {
           'build/css/YTPlayer.css',
           'build/css/flexslider.css',
           'build/css/font-awesome.css',
-          'build/css/animate.css'
+          'build/css/animate.css',
+          'build/css/prism.css'
         ],
         dest: 'build/css/<%=pkg.name%>.css'
       }
