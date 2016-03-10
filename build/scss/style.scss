@@ -1626,3 +1626,37 @@ code.gist {
   padding: 0;
   background: none;
 }
+
+/* collapsible blog list*/
+.collapsible-blog-list {
+  border: none;
+  margin-bottom: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+
+  a.list-group-item {
+    border: none;
+    padding: 5px 0;
+
+    &:hover {
+      background: none;
+      color: $skincolor;
+    }
+
+    &:focus {
+      background: none;
+    }
+  }
+
+  .sub-menu {
+    margin-left: 15px;
+  }
+
+  .collapse-toggle > i:before {
+    content: "\f105";
+
+    &.collapsed > i:before {
+      content: "\f107";
+    }
+  }
+}
