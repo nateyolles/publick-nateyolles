@@ -468,6 +468,9 @@ social icons css here
 .social-colored li a i.icon-in {
     background-color: #007bb6;
 }
+.social-colored li a i.icon-so {
+    background-color: #f48024;
+}
 
 /****************************
 About section
@@ -690,15 +693,26 @@ input[type="color"]:focus,
     margin-bottom: 30px;
     padding: 10px 20px;
     border: 1px solid #eeeeee;
+
+    h4 {
+        color:#000;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    li {
+        padding-right: 10px;
+        padding-left: 0;
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
 }
 
-.sidebar-box h4 {
-    color:#000;
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-}
+
 
 .widget-search .search-form {
     position: relative;
@@ -1601,6 +1615,9 @@ label span {
     content: "\f0d5";
 }
 
+.logo-so:before {
+    content: "\f16c";
+}
 
 /* comments */
 .reply {
